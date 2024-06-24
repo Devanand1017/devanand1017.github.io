@@ -1,0 +1,111 @@
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color: #000;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for header */
+header {
+    width: 20%;
+    float: left;
+}
+
+/* Style for rules for navigation area */
+nav {
+    width: 75%;
+    float: right;
+    margin: 5em 3em 0 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.3em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+main {
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+    display: block;
+    text-align: center;
+}
+h2 {
+    color: dodgerblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.who-we-are, .our-story, .executives, .marketingteam, .sales {
+    margin-bottom: 40px;
+}
+
+.executives .executive, .marketingteam .team, .sales .team {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.executives .executive figure, .marketingteam .team figure, .sales .team figure {
+    margin: 10px;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+aside {
+    max-width: 1200px;  /* Adjusted to match main width */
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+
+}
