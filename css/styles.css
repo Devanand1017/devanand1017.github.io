@@ -20,7 +20,7 @@ img {
 
 /* Style rules for body and images */
 body {
-    background-color: #000;
+    background-color: #034758;
 }
 
 img {
@@ -65,7 +65,7 @@ nav li a {
 /* Style rules for main content */
 main {
     clear: left;
-    background-color: #fff;
+    background-color: #93e6fb;
     padding: 2%;
     font-size: 1.25em;
     display: block;
