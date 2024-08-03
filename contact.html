@@ -10,6 +10,7 @@ Student_id:c0944033:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="./images/trash-can_115312.ico" type="image/x-icon">
     <title>Contact</title>
 </head>
 
@@ -47,6 +48,39 @@ Student_id:c0944033:
                 <h4>Visit us at: 1591 Lycee Place, Ottawa, Ontario</h4>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5602.166680716052!2d-75.66581612389838!3d45.40765897107309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce058f94b0908f%3A0x2ab414063b41c13d!2s1591%20Lyc%C3%A9e%20Place%2C%20Ottawa%2C%20ON%20K1G%204A7!5e0!3m2!1sen!2sca!4v1718480902958!5m2!1sen!2sca" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
             </div>
+            <!-- Form section -->
+            <section id="form">
+                <h2>Complete the form below and one of our staff members will contact you</h2>
+                <form class="form-grid"><!-- Start Form -->
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName">
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" name="lName" id="lName">
+
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Product Interest</legend>
+                        <p>I am interested in:</p>
+                        <label for="compostBin"><input type="checkbox" name="interest" id="compostBin" value="Compost Bins">Compost Bins</label>
+
+                        <label for="recycleBin"><input type="checkbox" name="interest" id="recycleBin" value="Recycling Bins">Recycling Bins</label>
+
+                        <label for="trashCan"><input type="checkbox" name="interest" id="trashCan" value="Trash Cans">Trash Cans</label>
+
+                        <label for="commercialBins"><input type="checkbox" name="interest" id="commercialBins" value="Commercial Bins">Commercial Bins</label>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                </form>
         </main>
 
         <!-- Use the footer area to add webpage footer content -->
