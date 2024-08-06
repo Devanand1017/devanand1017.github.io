@@ -324,8 +324,8 @@ section#faqs {
 
 .map {
     border: 8px solid #000;
-    width: 30%; /* Set width to 100% of its container or adjust as needed */
-    height: 300px; /* Adjust height to your desired value */
+    width: 60%; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
     box-sizing: border-box; /* Ensure padding and border are included in the width and height */
 }
 
