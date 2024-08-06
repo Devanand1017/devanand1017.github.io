@@ -20,7 +20,7 @@ img {
 
 /* Style rules for body and images */
 body {
-    background-color: #034758;
+    background-color: #000000;
 }
 
 img {
@@ -65,7 +65,7 @@ nav li a {
 /* Style rules for main content */
 main {
     clear: left;
-    background-color: #93e6fb;
+    background-color: #ffffff;
     padding: 2%;
     font-size: 1.25em;
     display: block;
@@ -84,6 +84,24 @@ main {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+}
+.media-banner {
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.media-specials {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #034758;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .banner {
     width: 100%;
@@ -147,6 +165,8 @@ width: 300px;
 
 .map {
     border: 8px solid #000;
+    width: 300px; 
+    height: 200px;
 }
 
 /* Style rules for footer content */

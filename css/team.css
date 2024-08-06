@@ -13,11 +13,14 @@ img {
 
 /* Style rules for body and images */
 body {
-    background-color: #034758;
+    background-color: #000000;
 }
-img {
+.sales,.marketingteam,.executives img {
     max-width: 100%;
     display: block;
+    border: 5px solid #000000; /* Add border: 5 pixels solid with a specific color */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin-bottom: 10px; /* Ensure consistent spacing around the images */
 }
 
 /* Style rule for header */
@@ -55,14 +58,14 @@ nav li a {
 }
 main {
     clear: left;
-    background-color: #93e6fb;
+    background-color: #FFFFFF;
     padding: 2%;
     font-size: 1.25em;
     display: block;
     text-align: center;
 }
 h2 {
-    color: dodgerblue;
+    color: rgb(5, 132, 251);
     text-align: center;
     margin-top: 20px;
 }

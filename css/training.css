@@ -13,7 +13,7 @@ img {
 
 /* Style rules for body and images */
 body {
-    background-color: #034758;
+    background-color: #000000;
 }
 
 img {
@@ -58,7 +58,7 @@ nav li a {
 /* Style rules for main content */
 main {
     clear: left;
-    background-color: #93e6fb;
+    background-color: #cdedf38f;
     padding: 2%;
     font-size: 1.25em;
     display: block;
@@ -66,7 +66,7 @@ main {
 }
 
 h1{
-    color: dodgerblue;
+    color: rgb(0, 0, 0);
 }
 table {
     margin: 0 auto;
