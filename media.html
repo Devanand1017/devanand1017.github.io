@@ -39,29 +39,29 @@ Student_id:c0944033:
         </nav>
 
         <!-- Use the main area to add the main content of the webpage -->
-        <main>
-            <section class="media-banner">
-                <h1>Welcome to Our Media Page</h1>
-                <p>Stay updated with our latest podcasts and product demos</p>
-            </section>
-            
+        <main id="media-main">
             <!-- Audio section -->
-            <section class="media-specials">
+            <section>
                 <h2>Listen to Our Latest Podcast</h2>
-                <div class="media-product-of-week">
-                    <audio controls>
-                        <source src="./media/ElevenLabs_2024-08-03T15_44_53_Rachel_pre_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                </div>
+                <audio controls>
+                    <source src="./media/ElevenLabs_2024-08-03T15_44_53_Rachel_pre_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
             </section>
 
             <!-- Video section -->
-            <section class="media-specials">
-                <h2>Watch Our Product Demo</h2>
-                <div class="media-product-of-week">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HPBn2sq1M7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Product Demo Video"></iframe>
-                </div>
+            <section aria-labelledby="demo-heading">
+                <h2 id="demo-heading">Watch Our Product Demo</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HPBn2sq1M7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Product Demo Video"></iframe>
+            </section>
+            <section id="press-releases">
+                <h2>Press Releases and News</h2>
+                <article>
+                    <h3>New Product Launch</h3>
+                    <p>We are excited to announce the launch of our new line of eco-friendly trash cans...</p>
+                    <a href="https://www.ikea.com/ca/en/cat/bins-bags-16213/">Read more</a>
+                </article>
+                <!-- Repeat for additional news articles -->
             </section>
         </main>
 

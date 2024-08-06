@@ -38,7 +38,7 @@ Student_id:c0944033:
         </nav>
 
         <!-- Use the main area to add the main content of the webpage -->
-        <main>
+        <main id="media-form">
 
             <div id="contact">
                 <h2>Experience the perfect blend of design and functionality with our premium trash cans</h2>
@@ -51,23 +51,28 @@ Student_id:c0944033:
             <!-- Form section -->
             <section id="form">
                 <h2>Complete the form below and one of our staff members will contact you</h2>
-                <form class="form-grid"><!-- Start Form -->
+                <form class="form-grid">
                     <fieldset>
                         <legend>Customer Information</legend>
-                        <label for="fName">First Name:</label>
-                        <input type="text" name="fName" id="fName">
-
-                        <label for="lName">Last Name:</label>
-                        <input type="text" name="lName" id="lName">
-
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email">
-
-                        <label for="phone">Phone:</label>
-                        <input type="tel" id="phone" name="phone">
+                        <div class="form-group">
+                            <label for="fName">First Name:</label>
+                            <input type="text" name="fName" id="fName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lName">Last Name:</label>
+                            <input type="text" name="lName" id="lName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset id="product-interest">
                         <legend>Product Interest</legend>
                         <p>I am interested in:</p>
                         <label for="compostBin"><input type="checkbox" name="interest" id="compostBin" value="Compost Bins">Compost Bins</label>
@@ -81,6 +86,7 @@ Student_id:c0944033:
 
                     <input type="submit" id="submit" value="Submit" class="btn">
                 </form>
+            </section>
         </main>
 
         <!-- Use the footer area to add webpage footer content -->

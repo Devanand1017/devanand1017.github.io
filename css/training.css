@@ -1,3 +1,4 @@
+/* General Reset */
 body,
 header,
 nav,
@@ -9,104 +10,162 @@ img {
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders don't affect width */
 }
 
 /* Style rules for body and images */
 body {
     background-color: #000000;
+    font-family: Arial, sans-serif; /* Consistent font across the site */
 }
 
 img {
-    max-width: 100%;
-    display: block;
+    max-width: 100%; /* Ensure images scale properly within containers */
+    height: auto; /* Maintain aspect ratio */
 }
 
-/* Style rule for header */
+
+/* Header and Navigation */
 header {
     width: 20%;
     float: left;
 }
 
-/* Style for rules for navigation area */
 nav {
     width: 75%;
     float: right;
-    margin: 5em 3em 0 0;
+    margin: 5em 3em 0 0; /* Margin for spacing around the navigation */
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove default list styling */
     margin: 0;
-    text-align: right;
+    padding: 0; /* Remove default padding */
+    text-align: right; /* Align navigation items to the right */
 }
 
 nav li {
-    display: inline-block;
+    display: inline-block; /* Display list items in a horizontal line */
     font-size: 1.3em;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
 }
 
 nav li a {
-    display: block;
+    display: block; /* Make links block elements for padding */
     color: #fff;
     text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
+    padding: 0.5em 1em; /* Add padding for better spacing */
+    text-decoration: none; /* Remove underline from links */
+}
+nav li a:hover {
+    background-color: #026a8d; /* Lighter teal color for hover effect */
+    color: #fff; /* Ensure text color remains white */
 }
 
-/* Style rules for main content */
+/* Main Content */
 main {
-    clear: left;
+    clear: both; /* Clear floats from header and nav */
     background-color: #cdedf38f;
     padding: 2%;
     font-size: 1.25em;
-    display: block;
-    text-align: center;
+    text-align: center; /* Center-align text */
 }
 
-h1{
-    color: rgb(0, 0, 0);
+section {
+    text-align: center; /* Center-align section content */
 }
+
+section ul {
+    display: inline-block; /* Make list block for centering */
+    text-align: left; /* Align list text to the left */
+    list-style-position: inside; /* Position list bullets inside */
+    padding-left: 0; /* Remove default padding */
+}
+
+.training-program, .training-schedule, .certification-info {
+    width: 80%; /* Set width for main sections */
+    margin: 0 auto; /* Center sections */
+    padding: 20px;
+    background-color: #fff;
+    color: #034758;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.training-program img, .training-schedule img, .certification-info img {
+    max-width: 100%; /* Ensure images fit within sections */
+    height: auto;
+    margin: 0 auto; /* Center images */
+}
+
+/* Table Styles */
 table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 80%;
-    margin-top: 20px;
+    margin: 0 auto; /* Center tables */
+    border-collapse: collapse; /* Collapse borders */
+    width: 80%; /* Set table width */
+    margin-top: 20px; /* Margin for spacing */
 }
 
 caption {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.5em; /* Caption font size */
+    margin-bottom: 10px; /* Margin below caption */
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #ddd; /* Border for table cells */
+    padding: 8px; /* Padding inside cells */
 }
 
 th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background-color: #f2f2f2; /* Background color for table headers */
+    font-weight: bold; /* Bold text in headers */
 }
 
 tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Alternating row colors */
 }
 
 tbody tr:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Hover effect for rows */
 }
 
+/* Footer */
 footer p {
     font-size: 0.75em;
-    text-align: center;
+    text-align: center; /* Center text */
     color: #fff;
-    padding: 0 1em;
+    padding: 0 1em; /* Add padding for spacing */
 }
 
 footer p a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* Link color in footer */
+    text-decoration: none; /* Remove underline from links */
+}
 
+/* Media Queries */
+/* Styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    .training-program, .training-schedule, .certification-info {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+    
+    table {
+        width: 90%; /* Adjust table width for smaller screens */
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .training-program, .training-schedule, .certification-info {
+        width: 100%; /* Full-width sections */
+    }
+    
+    table {
+        width: 100%; /* Full-width table */
+    }
+
+    .training-program img, .training-schedule img, .certification-info img {
+        width: 100%; /* Ensure images take full width */
+    }
 }

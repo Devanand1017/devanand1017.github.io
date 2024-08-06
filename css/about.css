@@ -1,3 +1,4 @@
+/* General Reset */
 body,
 header,
 nav,
@@ -9,117 +10,135 @@ img {
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders don't affect width */
 }
 
 /* Style rules for body and images */
 body {
     background-color: #000000;
+    font-family: Arial, sans-serif; /* Consistent font */
 }
 
 img {
-    max-width: 100%;
-    display: block;
+    max-width: 100%; /* Ensure images scale properly within containers */
+    height: auto; /* Maintain aspect ratio */
 }
 
-/* Style rule for header */
+/* Header and Navigation */
 header {
     width: 20%;
     float: left;
 }
 
-/* Style for rules for navigation area */
 nav {
     width: 75%;
     float: right;
-    margin: 5em 3em 0 0;
+    margin: 5em 3em 0 0; /* Margin for spacing */
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove default list styling */
     margin: 0;
-    text-align: right;
+    padding: 0; /* Remove default padding */
+    text-align: right; /* Align navigation items to the right */
 }
 
 nav li {
-    display: inline-block;
+    display: inline-block; /* Display list items in a horizontal line */
     font-size: 1.3em;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
 }
 
 nav li a {
-    display: block;
+    display: block; /* Make links block elements for padding */
     color: #fff;
     text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
+    padding: 0.5em 1em; /* Add padding for better spacing */
+    text-decoration: none; /* Remove underline from links */
+}
+nav li a:hover {
+    background-color: #026a8d; /* Lighter teal color for hover effect */
+    color: #fff; /* Ensure text color remains white */
 }
 
-/* Style rules for main content */
+/* Main Content */
 main {
-    clear: left;
+    clear: both; /* Clear floats from header and nav */
     background-color: #ffffff;
     padding: 2%;
     font-size: 1.25em;
-    display: block;
-    text-align: left;
-}
-main h2{
-    text-align: left;
-}
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-header h1 {
-    margin: 0;
+    text-align: left; /* Align text to the left */
 }
 
 main h2 {
-    margin-top: 0;
-color: dodgerblue;
-}
-.guarantee p{
-    text-align: left;
-}
-.reasons ol li{
-list-style-type:none;
-text-align: left;
+    text-align: left; /* Align headings to the left */
+    color: dodgerblue;
 }
 
+.container {
+    width: 80%; /* Container width */
+    margin: 0 auto; /* Center container */
+    overflow: hidden; /* Clear floats inside container */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.guarantee p {
+    text-align: left; /* Align text to the left */
+}
+
+.reasons ol li {
+    list-style-type: none; /* Remove list styling */
+    text-align: left; /* Align list items to the left */
+}
+
+/* Footer */
 footer p {
     font-size: 0.75em;
-    text-align: center;
+    text-align: center; /* Center text */
     color: #fff;
-    padding: 0 1em;
+    padding: 0 1em; /* Add padding for spacing */
 }
 
 footer p a {
-    color: #fff;
-    text-decoration: none;
-
+    color: #fff; /* Link color in footer */
+    text-decoration: none; /* Remove underline from links */
 }
 
 /* Media Queries */
+/* Styles for tablets and smaller devices */
 @media (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 90%; /* Adjust container width */
+    }
+
+    nav {
+        width: 100%; /* Make nav full-width */
+        float: none; /* Remove float */
+        margin: 0; /* Remove margin */
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        text-align: center; /* Center-align navigation items */
+        padding: 0; /* Remove padding */
+    }
+
+    nav li {
+        display: block; /* Stack nav items vertically */
+        margin: 10px 0; /* Add vertical spacing */
     }
 }
 
+/* Styles for mobile devices */
 @media (max-width: 480px) {
     .container {
-        width: 100%;
+        width: 100%; /* Full-width container */
     }
 
-    nav ul li {
-        margin: 5px 0;
+    nav li {
+        margin: 5px 0; /* Adjust vertical spacing */
     }
 }

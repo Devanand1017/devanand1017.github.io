@@ -1,10 +1,4 @@
-/*
-Devanand Thulaseedharan
-c4 lab2
-04/06/24
-*/
-
-/*CSS Reset*/
+/* General Reset */
 body,
 header,
 nav,
@@ -16,25 +10,26 @@ img {
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Style rules for body and images */
 body {
     background-color: #000000;
+    font-family: Arial, sans-serif;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+    max-width: 100%; /* Ensure images scale properly */
+    height: auto; /* Maintain aspect ratio */
 }
 
-/* Style rule for header */
+/* Header and Navigation */
 header {
     width: 20%;
     float: left;
 }
 
-/* Style for rules for navigation area */
 nav {
     width: 75%;
     float: right;
@@ -42,143 +37,375 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Remove default list styling */
     margin: 0;
-    text-align: right;
+    padding: 0; /* Remove default padding */
+    text-align: right; /* Align navigation items to the right */
 }
 
 nav li {
-    display: inline-block;
+    display: inline-block; /* Display list items in a horizontal line */
     font-size: 1.3em;
     font-family: Verdana, Arial, sans-serif;
     font-weight: bold;
 }
 
 nav li a {
-    display: block;
+    display: block; /* Make links block elements for padding */
     color: #fff;
     text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
+    padding: 0.5em 1em; /* Add padding for better spacing */
+    text-decoration: none; /* Remove underline from links */
+}
+nav li a:hover {
+    background-color: #026a8d; /* Lighter teal color for hover effect */
+    color: #fff; /* Ensure text color remains white */
 }
 
-/* Style rules for main content */
+/* Main Content */
 main {
-    clear: left;
+    clear: both; /* Clear floats from header and nav */
     background-color: #ffffff;
     padding: 2%;
     font-size: 1.25em;
-    display: block;
-    text-align: center;
+    text-align: center; /* Center-align text */
 }
+section#faqs {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #e0f7fa; /* Light blue background for section */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+    border-bottom: 1px solid #ddd;
+    padding: 1em 0;
+}
+
+.faq h2 {
+    font-size: 1.5em;
+    color: #00796b; /* Teal color for questions */
+    margin-bottom: 0.5em;
+}
+
+.faq p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+#form {
+    margin: 20px 10%;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form h2 {
+    font-size: 1.5em;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+#form fieldset {
+    border: none;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+#form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#form .form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+#form .form-group label {
+    display: flex;
+    align-items: center;
+    color: #004d40;
+    width: 150px; /* Fixed width for labels */
+}
+
+#form .form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    font-size: 1em;
+    min-width: 150px; /* Fixed width for inputs */
+}
+
+#form p {
+    margin-bottom: 10px;
+}
+
+#form .btn {
+    background-color: #004d40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#form .btn:hover {
+    background-color: #00796b;
+}
+
 .section {
-    text-align: center;
+    text-align: center; /* Center-align section content */
 }
+
 .section ul {
-    display: inline-block;
-    text-align: left;
-    list-style-position: inside;
-    padding-left: 0;
+    display: inline-block; /* Make list block for centering */
+    text-align: left; /* Align list text to the left */
+    list-style-position: inside; /* Position list bullets inside */
+    padding-left: 0; /* Remove default padding */
 }
+
+/* Specific styles for specials.html */
+
+/* Style for the banner section */
 .specials {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-}
-.media-banner {
-    width: 100%;
-    text-align: center;
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px 0;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-.media-specials {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+    background-color: #f9f9f9; /* Light background for contrast */
     color: #034758;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
 }
+
 .banner {
-    width: 100%;
-    text-align: center;
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-.product-of-week, .weekly-sales, .customer-guarantee, .reasons-to-buy {
-    background: #fff;
-    border: 1px solid #ccc;
+    background-color: #026a8d; /* Darker teal background */
+    color: #fff; /* White text */
     padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.product-of-week, .weekly-sales, .customer-guarantee, .reasons-to-buy {
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
-.product-of-week img, .weekly-sales img, .customer-guarantee img, .reasons-to-buy img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
+
+/* Image sizes */
+.product-of-week img {
+    height: 300px;
+    width: 300px;
 }
-.customer-guarantee p {
-    text-align: justify;
-}
-.customer-guarantee strong {
-    font-weight: bold;
-}
-.product-of-week img{
-height: 300px;
-width: 300px;
-}
-.customer-guarantee img{
+
+.customer-guarantee img {
     height: 300px;
     width: 450px;
 }
-.sales-item img{
+
+.sales-item img {
     height: 300px;
     width: 400px;
 }
-.reasons-to-buy ul {
-    list-style-type: none;
-    padding: 0;
-}
-.reasons-to-buy li {
-    margin-bottom: 10px;
-}
+
 .reasons-to-buy li img {
     height: 300px;
     width: 450px;
 }
-#contact {
-    text-align: center;
+
+/* Ensure images fit within sections */
+.product-of-week img, .weekly-sales img, .customer-guarantee img, .reasons-to-buy img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.product-of-week {
+    background-color: #23e8d1; /* Yellow background for product of the week */
+    border: 2px solid #37e4e4; /* Border to match banner */
 }
 
-#contact a {
-    color: #666600;
+.weekly-sales {
+    background-color: #0be9fd; /* Light green background for sales */
+    border: 2px solid #388e3c; /* Dark green border */
+}
+
+.customer-guarantee {
+    background-color: #ffffff; /* Light blue background for guarantee */
+    border: 2px solid #1976d2; /* Dark blue border */
+}
+
+.reasons-to-buy {
+    background-color: #81c784; /* Light orange background for reasons */
+    border: 2px solid #f57c00; /* Dark orange border */
+}
+
+.reasons-to-buy ul {
+    list-style: none; /* Remove list styling */
+    padding: 0;
+}
+
+.reasons-to-buy li {
+    margin-bottom: 10px;
+}
+
+.reasons-to-buy li img {
+    display: block;
+    margin: 0 auto 10px; /* Center images and add bottom margin */
+}
+/* Main Content */
+#media-main {
+    background-color: #ffffff;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 80%;
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+}
+
+/* Section Styling */
+#media-main section {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: #f0f4f8; /* Light gray-blue background for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+#media-main section h2 {
+    color: #026a8d; /* Teal color for section headings */
+    font-size: 1.75em; /* Larger font size for headings */
+    margin-bottom: 1em;
+}
+
+#media-main section audio {
+    width: 100%; /* Full width for audio controls */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for the audio control */
+}
+
+#media-main section iframe {
+    width: 100%; /* Full width for iframe */
+    height: auto; /* Adjust height proportionally */
+    border-radius: 10px; /* Rounded corners for the iframe */
+    border: 3px solid #026a8d; /* Border to match the theme */
+}
+#press-releases {
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#press-releases article {
+    margin-bottom: 2em;
+}
+
+#press-releases h3 {
+    color: #026a8d;
+}
+
+#press-releases a {
+    color: #026a8d;
     text-decoration: none;
+}
+
+#press-releases a:hover {
+    text-decoration: underline;
 }
 
 .map {
     border: 8px solid #000;
-    width: 300px; 
-    height: 200px;
+    width: 30%; /* Set width to 100% of its container or adjust as needed */
+    height: 300px; /* Adjust height to your desired value */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
 }
 
-/* Style rules for footer content */
+/* Footer */
 footer p {
     font-size: 0.75em;
-    text-align: center;
+    text-align: center; /* Center text */
     color: #fff;
-    padding: 0 1em;
+    padding: 0 1em; /* Add padding for spacing */
 }
 
 footer p a {
-    color: #fff;
-    text-decoration: none;
-
+    color: #fff; /* Link color in footer */
+    text-decoration: none; /* Remove underline from links */
 }
+
+/* Media Queries */
+/* Styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    .specials, .banner, .product-of-week, .weekly-sales, .customer-guarantee, .reasons-to-buy {
+        width: 90%;
+    }
+    #media-main {
+        max-width: 90%;
+    }
+
+    #media-main section {
+        padding: 1em;
+    }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 480px) {
+    .specials, .banner, .product-of-week, .weekly-sales, .customer-guarantee, .reasons-to-buy {
+        width: 100%;
+    }
+
+    .product-of-week img, .weekly-sales img, .customer-guarantee img, .reasons-to-buy img {
+        width: 100%;
+    }
+    .map {
+        width: 100%; /* Make map full-width on mobile screens */
+        height: auto; /* Adjust height proportionally to maintain aspect ratio */
+    }
+    #media-main {
+        max-width: 100%;
+        padding: 1em;
+    }
+
+    #media-main section {
+        padding: 0.5em;
+    }
+    #form {
+        margin: 0; /* Remove margins for mobile view */
+        padding: 1em; /* Adjust padding for better fit */
+        width: 100%; /* Ensure form takes full width */
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr; /* Stack form fields in a single column */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .form-group label {
+        width: 100%; /* Ensure labels take full width */
+        margin-bottom: 0.5em; /* Add space between label and input */
+    }
+
+    .form-group input {
+        width: 100%; /* Ensure inputs take full width */
+    }
+
+    .btn {
+        width: 100%; /* Make button full-width for mobile devices */
+        padding: 15px; /* Increase padding for better touch accessibility */
+    }
+}
+
+
