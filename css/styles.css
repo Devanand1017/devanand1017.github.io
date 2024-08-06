@@ -344,68 +344,100 @@ footer p a {
 
 /* Media Queries */
 /* Styles for tablets and smaller devices */
+/* Styles for Tablets (768px and below) */
 @media (max-width: 768px) {
-    .specials, .banner, .product-of-week, .weekly-sales, .customer-guarantee, .reasons-to-buy {
-        width: 90%;
-    }
-    #media-main {
-        max-width: 90%;
-    }
-
-    #media-main section {
-        padding: 1em;
-    }
-}
-
-/* Styles for mobile devices */
-@media (max-width: 480px) {
-    .specials, .banner, .product-of-week, .weekly-sales, .customer-guarantee, .reasons-to-buy {
+    header {
         width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
     }
 
-    .product-of-week img, .weekly-sales img, .customer-guarantee img, .reasons-to-buy img {
+    nav {
         width: 100%;
-    }
-    .map {
-        width: 100%; /* Make map full-width on mobile screens */
-        height: auto; /* Adjust height proportionally to maintain aspect ratio */
-    }
-    #media-main {
-        max-width: 100%;
-        padding: 1em;
+        float: none;
+        margin: 0;
     }
 
-    #media-main section {
-        padding: 0.5em;
-    }
-    #form {
-        margin: 0; /* Remove margins for mobile view */
-        padding: 1em; /* Adjust padding for better fit */
-        width: 100%; /* Ensure form takes full width */
+    nav ul {
+        text-align: center;
+        padding: 0;
     }
 
-    .form-grid {
-        grid-template-columns: 1fr; /* Stack form fields in a single column */
+    nav li {
+        display: block;
+        margin: 5px 0;
     }
 
     .form-group {
         flex-direction: column; /* Stack label and input vertically */
-        align-items: flex-start; /* Align items to the start */
+        margin-bottom: 1em; /* Add space between form groups */
     }
 
     .form-group label {
-        width: 100%; /* Ensure labels take full width */
-        margin-bottom: 0.5em; /* Add space between label and input */
+        width: auto; /* Remove fixed width */
+        margin-bottom: 0.5em; /* Add space below labels */
     }
 
     .form-group input {
-        width: 100%; /* Ensure inputs take full width */
+        width: 100%; /* Full width for inputs */
     }
 
-    .btn {
-        width: 100%; /* Make button full-width for mobile devices */
-        padding: 15px; /* Increase padding for better touch accessibility */
+    #media-main {
+        padding: 1em; /* Adjust padding */
+        max-width: 100%; /* Full width */
+    }
+
+    .product-of-week img, .weekly-sales img, .customer-guarantee img, .reasons-to-buy img {
+        height: auto; /* Adjust height */
+        max-width: 100%; /* Ensure images fit within container */
     }
 }
 
+/* Styles for Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
+    }
 
+    nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input vertically */
+        margin-bottom: 1em; /* Add space between form groups */
+    }
+
+    .form-group label {
+        width: auto; /* Remove fixed width */
+        margin-bottom: 0.5em; /* Add space below labels */
+    }
+
+    .form-group input {
+        width: 100%; /* Full width for inputs */
+    }
+
+    #media-main {
+        padding: 0.5em; /* Reduce padding */
+        max-width: 100%; /* Full width */
+    }
+
+    .product-of-week img, .weekly-sales img, .customer-guarantee img, .reasons-to-buy img {
+        height: auto; /* Adjust height */
+        max-width: 100%; /* Ensure images fit within container */
+    }
+}

@@ -136,7 +136,28 @@ footer p a {
 /* Media Queries */
 /* Styles for tablets and smaller devices */
 @media (max-width: 768px) {
-    .executives .executive, .marketingteam .team, .sales .team {
+    header {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+    #team .executives .executive, #team .marketingteam .team, #team .sales .team {
         flex-direction: column; /* Stack team members vertically */
         align-items: center; /* Center-align items */
     }
@@ -149,7 +170,28 @@ footer p a {
 
 /* Styles for mobile devices */
 @media (max-width: 480px) {
-    .executives .executive, .marketingteam .team, .sales .team {
+    header {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+    #team .executives .executive, #team .marketingteam .team, #team .sales .team {
         flex-direction: column; /* Stack team members vertically */
         align-items: center; /* Center-align items */
     }
@@ -160,7 +202,7 @@ footer p a {
         font-size: 0.9em; /* Adjust font size for better readability on small screens */
     }
     
-    figure img {
+    #team figure img {
         width: 100%; /* Ensure images take full width */
     }
 }

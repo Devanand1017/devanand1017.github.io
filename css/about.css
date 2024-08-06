@@ -111,34 +111,68 @@ footer p a {
 /* Media Queries */
 /* Styles for tablets and smaller devices */
 @media (max-width: 768px) {
-    .container {
-        width: 90%; /* Adjust container width */
+    header {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
     }
 
     nav {
-        width: 100%; /* Make nav full-width */
-        float: none; /* Remove float */
-        margin: 0; /* Remove margin */
+        width: 100%;
+        float: none;
+        margin: 0;
     }
 
     nav ul {
-        text-align: center; /* Center-align navigation items */
-        padding: 0; /* Remove padding */
+        text-align: center;
+        padding: 0;
     }
 
     nav li {
-        display: block; /* Stack nav items vertically */
-        margin: 10px 0; /* Add vertical spacing */
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        font-size: 1.1em; /* Slightly smaller text for tablets */
+        padding: 4%;
+    }
+
+    .container {
+        width: 90%; /* Adjust container width */
     }
 }
 
 /* Styles for mobile devices */
 @media (max-width: 480px) {
-    .container {
-        width: 100%; /* Full-width container */
+    header {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
     }
 
     nav li {
-        margin: 5px 0; /* Adjust vertical spacing */
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        font-size: 1em; /* Smaller text for mobile */
+        padding: 5%;
+    }
+
+    .container {
+        width: 100%; /* Full-width container */
     }
 }

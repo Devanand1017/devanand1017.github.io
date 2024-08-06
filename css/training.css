@@ -146,23 +146,88 @@ footer p a {
 /* Media Queries */
 /* Styles for tablets and smaller devices */
 @media (max-width: 768px) {
-    .training-program, .training-schedule, .certification-info {
-        width: 90%; /* Adjust width for smaller screens */
+    header {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
     }
-    
+
+    nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+    .training-program, .training-schedule, .certification-info {
+        width: 95%; /* Wider sections for smaller screens */
+    }
+
     table {
-        width: 90%; /* Adjust table width for smaller screens */
+        width: 100%; /* Full-width table */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        display: block; /* Block-level for scrolling */
+        margin-top: 1em; /* Adjust margin for spacing */
+    }
+
+    table thead, table tbody {
+        display: block; /* Block display for table header and body */
+    }
+
+    table th, table td {
+        width: auto; /* Automatic width for cells */
+        min-width: 150px; /* Ensure minimum width for readability */
     }
 }
 
 /* Styles for mobile devices */
 @media (max-width: 480px) {
+    header {
+        width: 100%;
+        float: none;
+        text-align: center; /* Center the logo */
+    }
+
+    nav {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
     .training-program, .training-schedule, .certification-info {
         width: 100%; /* Full-width sections */
     }
-    
+
     table {
         width: 100%; /* Full-width table */
+        overflow-x: auto; /* Allow horizontal scrolling */
+        display: block; /* Block-level for scrolling */
+    }
+
+    table thead, table tbody {
+        display: block; /* Block display for table header and body */
+    }
+
+    table th, table td {
+        width: auto; /* Automatic width for cells */
+        min-width: 120px; /* Ensure minimum width for readability */
     }
 
     .training-program img, .training-schedule img, .certification-info img {
